@@ -6,7 +6,7 @@ var optionsPossition = {
 };
 
 var apiUrl = "http://api.openweathermap.org/data/2.5/weather?";
-var apiKey = "&units=metric&appid=7979729f14f0c8081f3dad24bab8b459";
+var apiKey = "&units=metric&appid=b47c55fd44d3079f6f2ab358ff990e6a";
 
 function succesPosition(position) {
 	$("form").fadeOut("slow");
@@ -37,7 +37,7 @@ function errorPosition(error) {
 function getObject (obj) {
 	var city = obj.name;
 
-	var country = obj.sys.country;
+	var country = obj.sys.country
 
 	tempCels = 	Math.round(obj.main.temp);
 
